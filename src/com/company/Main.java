@@ -47,7 +47,6 @@ class ValueState{
         System.out.println("Состояние реактора " + working_value + " " + initial_state);
         notifyAll();
     }
-
     public synchronized void input() {
         if (working_value == initial_state) {
             try {
